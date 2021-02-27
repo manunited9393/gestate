@@ -1,0 +1,24 @@
+.products {
+    
+    &__content {
+        padding-left: 250px;
+    }
+    &__row {
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__block {
+        position: relative;
+    }
+    &__img {
+    }
+    &__title {
+        font-size: 40px;
+        font-weight: 700;
+        text-transform: uppercase;
+        position: absolute;
+        top: 50%;
+        transform: translate(-40px, -50%);
+    }
+}

@@ -1,0 +1,121 @@
+.footer {
+    position: relative;
+    padding: 135px 0px 60px;
+    background-color: #040203;
+    color: #fff;
+    &__slogan {
+        margin-top: 105px;
+        margin-left: 10px;
+        margin-bottom: 50px;
+        span {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 40px;
+            display: block;
+            line-height: 35px;
+            &:last-child {
+                margin-left: 100px;
+            }
+        }
+    }
+    &__right-side {
+        margin-top: 10px;
+        display: flex;
+    }
+    &__contacts {
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        a {
+            color: #fff;
+            font-weight: 600;
+            font-size: 12px;
+            text-transform: uppercase;
+            text-decoration: none;
+            margin-bottom: 10px;
+            transition: .2s all;
+            &:hover {
+                color: rgba(255, 255, 255, 0.562);
+            }
+        }
+    }
+    &__nav {
+        margin-left: 90px;
+        a {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #fff;
+            margin-bottom: 10px;
+            transition: .2s all;
+            &:hover {
+                color: rgba(255, 255, 255, 0.562);
+            }
+        }
+    }
+    &__socials {
+        margin-top: 28px;
+        a {
+            margin-right: 80px;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 500;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: .2s all;
+            &:hover {
+                color: rgba(255, 255, 255, 0.753);
+            }
+        }
+    }
+    &__privacy {
+        position: absolute;
+        right: 85px;
+        bottom: 0;
+    }
+}
+.form {
+    display: flex;
+    width: 550px;
+    justify-content: space-between;
+    input {
+        color: #EDECEC;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #EDECEC;
+        font-family: inherit;
+        transition: .5s all;
+        &:focus {
+            border-bottom: 1px solid #552285;
+        }
+    }
+    &__email {
+        flex-grow: 1;
+        margin-left: 15px;
+        margin-right: 40px;
+    }
+    &__btn {
+        padding: 8px 26px;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0);
+        color: #fff;
+        border: 1px solid #EDECEC;
+        transition: .2s all;
+        &:hover {
+            border: 1px solid #552285;
+        }
+    }
+}
+.to-top {
+    position: absolute;
+    bottom: 0px;
+    transition: .3s all;
+    &:hover {
+        opacity: .7;
+    }
+}
+
+

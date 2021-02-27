@@ -1,0 +1,20 @@
+.review {
+    &__content {
+        padding-right: 400px;
+    }
+    &__block {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+    }
+    &__img {
+        width: 70px;
+        height: 70px;
+        img {
+        }
+    }
+    padding: 135px 0px 100px;
+    &__text {
+        margin-left: 20px;
+    }
+}
