@@ -67,7 +67,7 @@ function buildcopy() {
 
 function startwatch() {
     watch(['src/**/*js', '!**/*.min.js'], scripts);
-    watch('src/sass/**/*.scss', styles);
+    watch('src/sass/**/*.scss', {delay: 700},  styles);
     watch('src/**/*.html').on('change', browserSync.reload);
     watch('src/images/src/**/*', images);
 }

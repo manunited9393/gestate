@@ -16,7 +16,6 @@ body {
     max-width: 1300px;
     margin: 0 auto;
     position: relative;
-    // text-align: center;
 }
 .content {
     max-width: 1050px;
@@ -37,6 +36,17 @@ ul {
     }
 }
 
+.overlay {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.89);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    display: none;
+}
+
 @import 'blocks/main';
 @import 'blocks/features';
 @import 'blocks/products';
@@ -44,6 +54,38 @@ ul {
 @import 'blocks/advantages';
 @import 'blocks/review';
 @import 'blocks/footer';
+
+// media
+
+@media screen and (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .content {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .section-title {
+        font-size: 60px;
+        line-height: 50px;
+    }
+    a {
+        &:active {
+            outline: none;
+        }
+    }
+}
+
+@import 'blocks/media/main-media';
+@import 'blocks/media/features-media';
+@import 'blocks/media/products-media';
+@import 'blocks/media/about-media';
+@import 'blocks/media/advantages-media';
+@import 'blocks/media/review-media';
+@import 'blocks/media/footer-media';
 
 
 // font-family: 'Bebas Neue', cursive;

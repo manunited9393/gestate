@@ -1,0 +1,46 @@
+@media screen and (max-width: 576px) {
+    .advantages {
+        padding: 70px 0 120px;
+        &__top {
+            padding: 0;
+            margin-bottom: 70px;
+        }
+        &__top-block {
+            padding: 0 10px ;
+        }
+        &__img-descr {
+            font-size: 18px;
+            text-align: center;
+        }
+        &__content {
+            margin-top: 0px;
+        }
+        &__wrapper {
+            width: 100%;
+            h2 {
+                margin-left: 0px;
+            }
+        }
+        &__list {
+            margin-top: 40px;
+        }
+        &__order {
+            display: none;
+        }
+        &__block {
+            padding-top: 30px;
+            padding-bottom: 38px;
+        }
+        &__title {
+            font-size: 18px;
+            margin-left: 0px;
+        }
+        &__descr {
+            margin-left: 0px;
+            font-size: 15px;
+        }
+        &__line {
+            position: relative;
+        }
+    }
+}

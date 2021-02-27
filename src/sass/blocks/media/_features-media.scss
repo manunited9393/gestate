@@ -1,0 +1,43 @@
+@media screen and (max-width: 576px) {
+    .features {
+        padding: 90px 0 70px 0;
+        &__content {
+            padding: 0;
+        }
+        &__row {
+            display: block;
+        }
+        &__left {
+            margin-top: 20px;
+        }
+        &__img {
+            margin: 0;
+            width: 100%;
+            img {
+                -webkit-filter: brightness(49%) contrast(96%);
+                filter: brightness(49%) contrast(96%);
+            }
+        }
+        &__right {
+            margin-top: 30px;
+        }
+        &__block {
+            margin-left: 30px;
+            margin-bottom: 30px;
+        }
+        &__order {
+            margin-left: 0;
+            position: absolute;
+            left: 15px;
+        }
+        &__title {
+            webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            &:focus {
+                outline: none !important;
+            }
+        }
+        &__footer {
+            margin-top: 50px;
+        }
+    }
+}

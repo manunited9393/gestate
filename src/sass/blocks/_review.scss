@@ -10,7 +10,12 @@
     &__img {
         width: 70px;
         height: 70px;
+        
         img {
+            border-radius: 100%;
+            width: 70px;
+            height: 70px;
+            object-fit: cover;
         }
     }
     padding: 135px 0px 100px;

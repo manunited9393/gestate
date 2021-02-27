@@ -1,0 +1,27 @@
+@media screen and (max-width: 576px) {
+    .products {
+        padding: 10px 0px 40px 0px;
+        &__content {
+            padding: 0;
+        }
+        &__row {
+            margin: 40px 0 0;
+            display: block;
+        }
+        &__block {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        &__img {
+            width: 100%;
+            height: auto;
+        }
+        &__title {
+            font-size: 40px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}

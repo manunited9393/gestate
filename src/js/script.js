@@ -1,5 +1,44 @@
 window.addEventListener('DOMContentLoaded', () => {
 
+    function hamburger() {
+        const trigger = document.querySelector('.menu__btn');
+        const menu = document.querySelector('.menu__list');
+        const close = document.querySelector('.menu__close');
+        const overlay = document.querySelector('.overlay');
+        const menuElement = document.querySelectorAll('.menu__item');
+
+        function closeMenu() {
+            menu.style.display = 'none';
+            menu.classList.remove('animate__fadeIn');
+            overlay.style.display = 'none';
+            document.body.style.overflow = '';
+        }
+
+        trigger.addEventListener('click', function() {
+            menu.style.display = 'block';
+            menu.classList.add('animate__animated', 'animate__fadeIn');
+            overlay.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        });
+
+        menuElement.forEach(item => {
+            item.addEventListener('click', () => {
+                closeMenu();
+            });
+        });
+
+        overlay.addEventListener('click', () => {
+            closeMenu();
+        });
+
+        close.addEventListener('click', function() {
+            closeMenu();
+        });
+
+    }
+
+
+
     function collapse() {
         const trigger = document.querySelectorAll('.trigger');
         const blocks = document.querySelectorAll('.trigger-text');
@@ -10,7 +49,7 @@ window.addEventListener('DOMContentLoaded', () => {
         });
 
         trigger.forEach(item => {
-            item.addEventListener('click', function() {
+            item.addEventListener('click', function(e) {
                 if (!this.classList.contains('active')) {
                     this.classList.add('active');
                     item.nextElementSibling.style.display = "block";
@@ -29,5 +68,7 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    hamburger();
     collapse();
+
 });

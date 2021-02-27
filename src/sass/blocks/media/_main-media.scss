@@ -1,0 +1,116 @@
+@media screen and (max-width: 576px) {
+    .main {
+        min-height: 95vh;
+        padding-bottom: 80px;
+        &__content {
+            padding: 0 20px;
+        }
+        &__text {
+            margin: 70px auto 0;
+            padding: 0;
+            width: 100%;
+            img {
+                
+            }
+        }
+        &__subtitle {
+            margin: 8px 0 0 0 ;
+            padding: 0;
+            font-size: 28px;
+        }
+        &__descr {
+            margin-top: 60px;
+            width: 200px;
+            position: relative;
+            font-size: 23px;
+            line-height: 25px;
+        }
+        &__footer {
+            // position: absolute;
+            right: 0;
+        }
+    }
+
+    .header {
+        align-items: flex-start;        
+        &__right {
+            width: 140px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__number {
+            display: none;          
+            
+        }
+        &__number-icon {
+            padding: 0;
+            margin: 0;
+            display: block;
+            flex-grow: 1;
+            text-align: right;
+            img {
+                width: 17px;
+            }
+        }
+        &__language {
+            padding: 0;
+            margin: 0;
+            border: none;
+            flex-grow: 1; 
+            text-align: center;       
+        }
+        &__trigger {
+            padding: 10px;
+            margin: 0;
+            margin-top: 10px;
+            font-size: 15px;
+            border: none;
+            flex-grow: 2;
+            text-align: center;
+        }
+    }
+
+    .menu {
+        
+        &__btn {
+            width: auto;
+            border: none;
+            &:hover {
+                border: none;
+            }
+        }
+        &__btn-text {
+            display: none;
+        }
+        &__hamburger {
+
+        }
+    }
+
+    .socials {
+        margin-top: 100px;
+        flex-direction: row;
+        &__icon {
+            margin: 0 10px 0 0;
+            width: 40px;
+            height: 40px;
+        }
+    }
+    .to-bottom {
+        display: none;
+    }
+}
+
+@media only screen and (min-height: 750px) {
+    .main {
+        &__text {
+            margin-top: 100px;
+        }
+        &__descr {
+            margin-top: 100px;
+        }
+    }
+    .socials {
+        margin-top: 160px;
+    }
+}
