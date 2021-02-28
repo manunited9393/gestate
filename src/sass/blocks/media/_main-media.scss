@@ -34,7 +34,7 @@
     .header {
         align-items: flex-start;        
         &__right {
-            width: 140px;
+            width: 170px;
             flex-wrap: wrap;
             justify-content: center;
         }
@@ -112,5 +112,19 @@
     }
     .socials {
         margin-top: 160px;
+    }
+}
+
+@media only screen and (max-height: 590px) {
+    .main {
+        &__text {
+            margin-top: 40px;
+        }
+        &__descr {
+            margin-top: 50px;
+        }
+    }
+    .socials {
+        margin-top: 50px;
     }
 }
